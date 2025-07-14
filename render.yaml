@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: backend-server
+    name: expense-backend
     env: node
     plan: free
     buildCommand: npm install
@@ -11,10 +11,10 @@ services:
       - key: PORT
         value: 8000
       - key: MONGODB_URI
-        value: your-mongodb-connection-string
+        value: mongodb+srv://fatemamim28:DEfETsQn2Izpa0jJ@cluster0.le4hup1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
       - key: JWT_SECRET
-        value: your-secret-key
+        value: 491a5d9158734f87fc7ac5ebe2a8701f45479135d80be14328f5f0b28ec52fd38544c5d3fb20f92ea9f148c934bb438895209d8fc3be79468c0513c1bd4c6d42
     autoDeploy: true
     branch: main
     region: oregon
-    repo: https://github.com/your-username/your-backend-repo
+    repo: https://github.com/Fatema-Mim/expense-backend
